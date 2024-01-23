@@ -1,0 +1,162 @@
+.sub{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: aliceblue;
+    position: relative;
+}
+form{
+    visibility: visible;
+}
+.sub form{
+    width: 37.5rem;
+    text-align: center;
+}
+
+.error-txt{
+    font-size: .9375rem;
+    color: red;
+    text-align: left;
+    margin:-0.3125rem 0 .75rem;
+    display: none;
+}
+
+form .input-box{
+    display: flex;
+    justify-content: space-between;
+padding: 1.25rem;
+}
+
+.input-field{
+    width: fit-content;
+}
+
+.item{
+width: 100%;
+padding: 1.125rem;
+background: transparent;
+border:.125rem solid #3498db;
+outline: none;
+border-radius: .375rem;
+font-size: 1rem;
+color: #000;
+margin: .75rem auto;
+}
+
+.error{
+    border-color:rgb(255, 63, 63);
+}
+
+.error .error-txt{
+   display: block;
+}
+
+.textarea-field .item{
+    resize: none;
+}
+
+form button{
+    padding: .75rem 2rem;
+    background: #3498db;
+    border: none;
+    outline: none;
+    border-radius: .375rem;
+    box-shadow:0 0 .625rem #3498db;
+    font-size: 1rem;
+     color: #333;
+    letter-spacing: .0625rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    transition: 0.5s;
+}
+form button:hover{
+    box-shadow: none;
+}
+
+.popup{
+    display: flex;
+    justify-content: center;
+   max-width: 20rem;
+   width:100%;
+   max-height: 20rem;
+   height: 100%;
+   background: #fff;
+   border-radius: .375rem;
+   position: fixed;
+   top: 10%;
+   left: 50%;
+   transform: translate(-50%,50%) scale(1);
+   text-align: center;
+   border: dotted #3498db;
+    padding:  0 1.875rem 1.875rem;
+    color: #333;
+visibility:hidden;
+}
+.child {
+    position: fixed;
+    top: 30%;
+    left: 17%;
+  }
+
+.view_popup{
+    visibility: visible;
+    transform: translate(-50%,50%) scale(1);
+}
+.inform{
+    visibility: hidden;
+}
+
+.popup button{
+    padding: .75rem 2rem;
+    background: #3498db;
+    border: none;
+    outline: none;
+    border-radius: .375rem;
+    box-shadow:0 0 .625rem #3498db;
+    font-size: 1rem;
+     color: #333;
+    letter-spacing: .0625rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 1.25rem;
+    transition: 0.5s;
+}
+
+.popup button:hover{
+    box-shadow: none;
+}
+
+.op{
+    display:block;
+    background: #fff;
+    height:100%;
+    width: 100%;
+    opacity:0.5;
+}
+
+@media(max-width:692px) {
+    .item{
+        width: 70%;
+    }
+
+    label{
+        font-size: small;
+    }
+}
+
+@media(max-width:386px){
+    .popup{
+       max-width: 15rem;
+    }
+    .child {
+        position: fixed;
+        top: 30%;
+        left: 11%;
+      }
+      label{
+        font-size: 0.625rem;
+    }
+    
+}

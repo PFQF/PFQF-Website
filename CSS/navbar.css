@@ -1,0 +1,239 @@
+
+
+nav {
+   position: fixed;
+   margin-top: 0;
+   height: 8.7rem;
+   width: 100%;
+   display: flex;
+   flex-flow: row nowrap;
+   justify-content: space-between; 
+   align-items: center;
+   background-color: #3498db;
+   color: #ffffff;
+   padding: 2.5rem .625rem;
+   padding-top: 0;
+   padding-bottom: 0;
+   padding-left: 0;
+   z-index: 2;
+   border-radius: 0 0 .625rem .625rem;
+   box-shadow: 0 0 1.25rem rgba(0, 0, 0, 0.5); /* Initial shadow without glow */
+   transition: box-shadow 0.3s ease-in-out;
+ }
+
+ .logo{
+  margin: 0;
+  padding: 0;
+}
+
+  .logo img {
+    position: inherit;
+    padding-top: 1rem;
+    display: block;
+    width: 8rem;
+    height: 10rem;
+    margin: 0;
+  }
+
+
+ .Title-Text{
+  white-space: nowrap;
+  font-size: small;
+ }
+
+ nav:hover {
+   box-shadow: 0 0 3.75rem rgba(135, 183, 253, 0.8); 
+ }
+
+.Menu_ic{
+  width:2.1875rem;
+  position: absolute;
+  right:5rem;
+  top:3.5rem;
+display: none;
+}
+.Menu_ic img{
+  height: 3.125rem;;
+}
+
+ 
+ .nav-links {
+   list-style: none;
+  display: flex;
+   margin: 0;
+   padding: 0;
+   margin-left: auto;
+   position: relative;
+   left: -2%;
+ }
+ 
+ .nav-links > li{
+   padding-left:.3125rem;
+   padding-right: .3125rem;
+   padding-bottom: 0;
+   margin-right: .005rem;
+   border-left-width: 0;
+   transition: transform 0.3s ease-in-out;
+   
+ }
+ 
+
+ .nav-links > li a {
+  display: inline block;
+   white-space: nowrap;
+   text-decoration: none;
+   margin: .625rem;
+   color: #ffffff;
+   letter-spacing: .125rem;
+   font-weight: 31.25rem;
+   font-size: .75rem;
+ }
+
+
+ .nav-links > li:hover {
+   -webkit-transform: scale(1.1);
+   transform: scale(1.1) ease-in-out;
+ }
+
+
+ .nav-links > li:after  {
+   content: '•'; 
+   position: absolute;
+   top: 100%; 
+   left: 50%;
+   transform: translateX(-100%);
+   opacity: 0; 
+   transition: top 0.3s ease-in-out, opacity 0.3s ease-in-out; 
+ }
+
+ .nav-links > li:hover::after {
+   top: 87%;
+   opacity: 1;
+ }
+
+
+ .dropdown {
+  width: fit-content;
+  list-style-type: none;
+  padding-left: 0;
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #84c7f5;
+  z-index: 1000;
+  transition: height 1s ease;
+}
+
+.dropdown li{
+  padding-bottom: 1%;
+  margin-right: 0;
+  margin-left: 0;
+  padding: 1%;
+  border-left-width: 0;
+}
+.dropdown li a{
+  white-space: nowrap;
+  text-decoration: none;
+  margin: 0 .9375rem;
+  color: #ffffff;
+  letter-spacing: .125rem;
+  font-weight: 31.25rem;
+  font-size: .8125rem;
+}
+
+.dropdown li:hover {
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1) ease-in-out;
+}
+
+
+ li:hover .dropdown {
+  display: block;
+  border-radius: .625rem;
+  width: fit-content;
+}
+
+
+@media(max-width: 1089px)
+{
+  .nav-links > li{
+    padding-left: .0625rem;
+    padding-right: 0.0625rem;
+  }
+}
+
+@media(max-width: 1036px)
+{
+  .nav-links > li{
+    padding-left: .0000213rem;
+    padding-right: .0000213rem;
+  }
+}
+
+@media(max-width: 991px)
+{
+  .Menu_ic{
+    display: block;
+  }
+
+  .nav-links{
+  display: none;
+  align-content: center;
+  justify-content: center;
+  }
+  .nav-links > li{
+    padding: .9375rem 0.7rem;
+    padding-left: 3.5rem;
+    width:100%;
+  }
+  .nav-links > li a{
+    font-size: smaller;
+  }
+  .show{
+    display: flex;
+    flex-direction: column;
+    padding-left: 0;
+  padding-right: .185rem;
+  position: relative;
+  left: .625rem;
+  background-color: #2998e359;
+  z-index: 1000;
+    backdrop-filter: blur(0.625rem);
+    top: 185.7%!important;
+  }
+.nav-links > li:hover {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1) ease-in-out;
+  }
+  .nav-links > li:hover::after {
+    opacity: 0;
+  }
+  .dropdown {
+    width: 130px !important;
+        left: -52%;
+        top:23%;
+        background-color: #2999e3cd;
+        backdrop-filter: blur(1rem);
+        justify-content: right;
+        left:-19%;
+  }
+  .dropdown li{
+   padding-right: 0;
+   padding-left: 0;
+  }
+  .dropdown li a{
+    position: relative;
+    font-size: .625rem;
+    font-weight: 0;
+    padding-left: 0;
+    padding-right: 0;
+    left:0%
+  }
+  .extra {
+    display: inline;
+    left:-7% !important;
+    font-size: 6px !important;
+    font-weight: bolder;
+  }
+}

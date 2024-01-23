@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PFQF Website </title>
+  <link rel="icon" href="Images/PFQF_LOGO.svg" type="image/x-icon">
+  <link rel="stylesheet" href="CSS/styles.css">
+  <link rel="stylesheet" href="CSS/navbar.css">
+  <link rel="stylesheet" href="CSS/article.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll/dist/locomotive-scroll.min.css">
+  <script src="JS/Scroll.js"></script>
+</head>
+<body id="mainContent">
+  <section>
+    <header >
+      <nav> 
+        <div class="Menu_ic" onclick="tfunction()">
+          <img src="Images/Menu.svg"></img>
+        </div>
+          <div class="logo" >
+            <a href="https://www.pfqf.org.np/"><img src="Images/PFQF_LOGO.svg" alt="External SVG"></a>
+          </div>
+          <ul class="nav-links" id="nav"> 
+            <li ><a href="https://www.pfqf.org.np/">Home</a></li>
+            <li ><a>About Us ▼</a>
+              <ul class="dropdown" >
+                <li id><a href="https://www.pfqf.org.np/What_is_PFQF">What is PFQF?</a></li>
+                <li><a href="https://www.pfqf.org.np/Organizational_Structure" class="extra">Organizational Structure</a></li>
+              </ul>
+            </li>
+            <li ><a>What We Do ▼</a>
+              <ul class="dropdown">
+                <li><a href="https://www.pfqf.org.np/Projects">Our Projects</a></li>
+                <li><a href="https://www.pfqf.org.np/Objectives">Our Objectives</a></li>
+                <li><a href="https://www.pfqf.org.np/Thematic_Areas">Thematic Areas</a></li>
+              </ul>
+            </li>
+            <li ><a>Media ▼</a>
+              <ul class="dropdown">
+                <li id><a href="https://www.pfqf.org.np/Notice">News/Notice</a></li>
+                <li><a href="https://www.pfqf.org.np/Gallery">Gallery</a></li>
+              </ul>
+            </li>
+            <li><a>Resources ▼</a>
+              <ul class="dropdown">
+                <li><a href="https://www.pfqf.org.np/Publications">Publications</a></li>
+              </ul>
+            </li>
+            <li><a href="https://www.pfqf.org.np/Support">Support our initiative</a></li>
+            <li><a href="https://www.pfqf.org.np/Question_Box">Question Us</a></li>
+          </ul>
+      </nav>
+    </header>
+    </section>
+  <div class="hero" data-scroll data-scroll-speed="1">
+    <div class="gradient-mask Forpic hidden "></div>
+    <div>
+      <div><h1 class="Forpic hidden" data-scroll data-scroll-speed="1">
+        
+        
+        
+        Empowering    Transparency,     Fostering     Accountability</h1></div>
+    </div>
+  </div>
+  <section class="about">
+    <img src="Images/about-info.svg" alt="info" class="im">
+    <div class="container">
+      <h2>What is PFQF?</h2>
+      <p>Public Fund Questioning Forum Nepal (PFQF Nepal) is a non-governmental organization
+        committed to promoting transparency, accountability, and good governance in Nepal. PFQF Nepal has some specific objectives through which it wants to promote citizen&#39;s
+        participation and surveillance over the public funds and its spending.</p>
+       <div class="bb"><a  href="#" class="btn">Learn More</a></div>
+    </div>
+  </section>
+
+  <section class="services" id="mainContent">
+    <h2 class="scroll-element">Publications</h2>
+  </section>
+  
+  <div class="blog">
+
+    <div class="card">
+      <img src="Images/What.webp" alt="Article Image">
+      <h2>What Is PFQF?</h2>
+      <p>PFQF Nepal is a organization which is aiming to deepen its work on the sector of public fund transparency within Nepal</p>
+      <a href="#">Read More</a>
+    </div>
+  </div>
+
+  <section class="bb" id="mainContent">
+    <centre><a  href="#" class="btn">View More</a></centre>
+  </section>
+ 
+  <section class="contact" id="mainContent">
+    <div class="container">
+      <h2 style="margin-bottom: .5rem !important;">Contact Us</h2>
+      <p>Get in touch with us for any inquiries or collaboration at</p>
+      <p></p>
+      <p>pfqfnepal@gmail.com</p>
+      <a style='text-align: center;' href="mailto:pfqfnepal@gmail.com" class="btn">Contact Us</a>
+      <p> Changunarayan Municipality-5, Bhaktapur,Nepal</p>
+    </div>
+  </section>
+
+  <footer id="mainContent">
+    <div class="container">
+      <p> &copy; 2023  Public Fund Questioning Forum Nepal. All rights reserved.</p>
+    </div>
+  </footer>
+
+
+
+
+
+
+  <script>
+
+    function tfunction(){
+      var navbar= document.getElementById('nav');
+      navbar.classList.toggle('show');
+    }
+  </script>  
+</body>
+</html>
